@@ -1,0 +1,146 @@
+:root {
+	--color1: rgb(0, 0, 0);
+	--color2: hsl(0, 0%, 35%);
+	--color3: hsl(0, 0%, 75%);
+	--color4: hsl(0, 0%, 55%);
+	--color5: hsl(0, 0%, 62%);
+
+	--borderRadius: 5px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+
+	background-image: url("photo-1495107334309-fcf20504a5ab.jfif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	backdrop-filter: blur(5px);
+
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+footer {
+	text-align: center;
+	background-color: hsl(0, 0%, 35%);
+
+	height: 20%;
+
+	margin: 20px 0 0;
+	padding: 20px;
+}
+div.maindiv {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	margin: 10px auto;
+	padding: 25px;
+	border-radius: var(--borderRadius);
+
+	width: clamp(300px, 90%, 1000px);
+	height: 80%;
+
+	background-color: var(--color2);
+	overflow: auto;
+}
+
+h1 {
+	display: block;
+	align-self: center;
+	text-align: center;
+
+	padding: 25px 0px;
+	margin: 0 0 25px 0;
+	border-radius: var(--borderRadius);
+	width: 100%;
+	background-color: var(--color3);
+}
+h2.sectionTitle {
+	font-size: 20px;
+	margin: 0 0 10px 0;
+	padding: 5px 10px;
+	background-color: var(--color4);
+}
+#firsth2 {
+	border-top-left-radius: var(--borderRadius);
+	border-top-right-radius: var(--borderRadius);
+}
+h4 {
+	font-size: 16px;
+	padding: 0;
+	margin: 10px 0;
+}
+h3 {
+	font-size: 17px;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+main {
+	border-radius: var(--borderRadius);
+	background-color: var(--color3);
+}
+section {
+	margin: 0;
+	padding: 0;
+}
+span.mainText {
+	font-size: 15px;
+	display: block;
+	padding: 10px 30px;
+}
+p {
+	margin: 0 0 25px 0;
+}
+
+button {
+	padding: 8px 10px;
+
+	background-color: var(--color5);
+	border: none;
+	border-radius: var(--borderRadius);
+
+	font-size: 15px;
+}
+ul.exampleList {
+	padding: 15px 10px;
+
+	list-style-type: none;
+	background-color: var(--color5);
+	border-radius: var(--borderRadius);
+	font-size: 15px;
+}
+ul.exampleList li {
+	padding: 5px;
+}
+div.examples {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	margin: 15px auto 25px auto;
+
+	width: clamp(300px, 95%, 1000px);
+
+	overflow: auto;
+}
+.img {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+img {
+	margin: 0 10px 25px 10px;
+	height: clamp(100px, 260px, 300px);
+	border-radius: var(--borderRadius);
+}
+
+button:hover {
+	text-decoration: 1px underline;
+	cursor: pointer;
+	background-color: hsl(0, 0%, 58%);
+}
